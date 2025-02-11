@@ -48,7 +48,6 @@ header:hover {
 header .logo {
     width: 190px;
     position: absolute;
-    left: 20px;
     top: 50%;
     transform: translateY(-50%) scale(1);
     transition: transform 0.3s ease-in-out;
@@ -277,5 +276,25 @@ footer:hover {
     }
     .btn-main {
         padding: 10px 20px;
+    }
+
+    /* Logo seulement sur petits écrans */
+    @media screen and (max-width: 480px) {
+        header .logo {
+            width: 120px; /* Réduire la taille du logo sur mobile */
+            left: 0; /* Alignement à gauche */
+            position: absolute; /* Positionnement absolu pour aligner correctement */
+        }
+
+        /* Disposition des boutons horizontaux sous le titre Fiber Tech */
+        .hero .btn-main {
+            display: inline-block;
+            margin: 10px;
+            width: auto;
+        }
+
+        .hero {
+            text-align: center;
+        }
     }
 }
