@@ -32,7 +32,7 @@ header {
     color: white;
     padding: 20px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;  /* Change to space-between for left alignment */
     align-items: center;
     position: relative;
     height: 100px;
@@ -48,6 +48,7 @@ header:hover {
 header .logo {
     width: 190px;
     position: absolute;
+    left: 20px;
     top: 50%;
     transform: translateY(-50%) scale(1);
     transition: transform 0.3s ease-in-out;
@@ -218,7 +219,7 @@ footer:hover {
 /* Pour les tablettes et petits écrans (jusqu'à 768px) */
 @media screen and (max-width: 768px) {
     body {
-        font-size: 16px; /* Taille de texte plus petite pour les écrans moyens */
+        font-size: 16px;
     }
     .container {
         width: 90%;
@@ -248,12 +249,21 @@ footer:hover {
         padding: 20px;
         margin: 10px;
     }
+    /* Pour les boutons */
+    header nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .btn-main {
+        padding: 10px 20px;
+    }
 }
 
 /* Pour les smartphones (jusqu'à 480px) */
 @media screen and (max-width: 480px) {
     body {
-        font-size: 14px; /* Réduire la taille du texte sur les petits écrans */
+        font-size: 14px;
     }
     .container {
         width: 95%;
@@ -277,24 +287,13 @@ footer:hover {
     .btn-main {
         padding: 10px 20px;
     }
-
-    /* Logo seulement sur petits écrans */
-    @media screen and (max-width: 480px) {
-        header .logo {
-            width: 120px; /* Réduire la taille du logo sur mobile */
-            left: 0; /* Alignement à gauche */
-            position: absolute; /* Positionnement absolu pour aligner correctement */
-        }
-
-        /* Disposition des boutons horizontaux sous le titre Fiber Tech */
-        .hero .btn-main {
-            display: inline-block;
-            margin: 10px;
-            width: auto;
-        }
-
-        .hero {
-            text-align: center;
-        }
+    /* Pour les boutons en bas */
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        bottom: -50px; /* Décalage vertical pour mobile */
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
