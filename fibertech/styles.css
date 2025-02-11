@@ -249,6 +249,12 @@ footer:hover {
         padding: 20px;
         margin: 10px;
     }
+
+    /* Positionner les boutons sous la section Fiber Tech sur mobile */
+    .hero .btn-main {
+        margin-top: 40px;
+        display: inline-block;
+    }
 }
 
 /* Pour les smartphones (jusqu'à 480px) */
@@ -278,18 +284,35 @@ footer:hover {
     .btn-main {
         padding: 10px 20px;
     }
-    /* Ajustement des boutons pour les téléphones */
+
+    /* Changer l'affichage des boutons dans la navigation */
     header nav ul {
-        flex-direction: row;  /* Changer l'alignement des boutons en horizontal */
+        flex-direction: row;  /* Alignement horizontal des boutons */
         justify-content: center; /* Centrer les boutons */
         width: 100%;
         position: relative;
     }
+
     header nav ul li {
-        margin: 10px; /* Ajouter un peu d'espace entre les boutons */
+        margin: 10px;
     }
+
+    /* Positionner les boutons sous "Fiber Tech" */
+    .hero .btn-main {
+        margin-top: 40px;
+        display: inline-block;
+    }
+
+    /* Assurer que le bouton contact soit sous la section */
     .btn-contact {
-        display: block; /* S'assurer que le bouton est visible */
-        margin: 20px auto 10px auto; /* Ajouter de l'espace au-dessus et en-dessous du bouton */
+        display: block;
+        margin: 20px auto; /* Centrer le bouton et ajouter de l'espace */
+    }
+
+    /* Réduire la taille du logo pour mobile */
+    header .logo {
+        width: 120px; /* Taille plus petite pour mobile */
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
