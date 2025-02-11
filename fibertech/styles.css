@@ -213,3 +213,69 @@ footer:hover {
 .btn-contact:hover {
     background-color: #c9d6e4;
 }
+
+/* Media Queries pour les écrans plus petits */
+
+/* Pour les tablettes et petits écrans (jusqu'à 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Taille de texte plus petite pour les écrans moyens */
+    }
+    .container {
+        width: 90%;
+    }
+    header {
+        padding: 15px 0;
+        height: auto;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    header nav {
+        bottom: 0;
+        right: 10px;
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero h2 {
+        font-size: 2.5em;
+    }
+    .hero p {
+        font-size: 1.1em;
+    }
+    .service-item {
+        padding: 20px;
+        margin: 10px;
+    }
+}
+
+/* Pour les smartphones (jusqu'à 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px; /* Réduire la taille du texte sur les petits écrans */
+    }
+    .container {
+        width: 95%;
+    }
+    header h1 {
+        font-size: 1.5em;
+    }
+    .hero h2 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    .service-item {
+        padding: 15px;
+        margin: 5px;
+    }
+    footer {
+        padding: 15px 0;
+    }
+    .btn-main {
+        padding: 10px 20px;
+    }
+}
