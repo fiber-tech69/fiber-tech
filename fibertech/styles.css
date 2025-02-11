@@ -24,6 +24,7 @@ body {
     width: 80%;
     margin: auto;
     flex: 1;
+    text-align: center;  /* Assurer que le texte est centré dans .container */
 }
 
 /* Header */
@@ -32,7 +33,7 @@ header {
     color: white;
     padding: 20px 0;
     display: flex;
-    justify-content: space-between;  /* Change to space-between for left alignment */
+    justify-content: center;
     align-items: center;
     position: relative;
     height: 100px;
@@ -59,8 +60,8 @@ header .logo:hover {
 }
 
 header h1 {
+    text-align: center;  /* Assurer que le texte est centré dans le header */
     font-size: 2.5em;
-    text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
@@ -219,7 +220,7 @@ footer:hover {
 /* Pour les tablettes et petits écrans (jusqu'à 768px) */
 @media screen and (max-width: 768px) {
     body {
-        font-size: 16px;
+        font-size: 16px; /* Taille de texte plus petite pour les écrans moyens */
     }
     .container {
         width: 90%;
@@ -249,21 +250,12 @@ footer:hover {
         padding: 20px;
         margin: 10px;
     }
-    /* Pour les boutons */
-    header nav ul {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .btn-main {
-        padding: 10px 20px;
-    }
 }
 
 /* Pour les smartphones (jusqu'à 480px) */
 @media screen and (max-width: 480px) {
     body {
-        font-size: 14px;
+        font-size: 14px; /* Réduire la taille du texte sur les petits écrans */
     }
     .container {
         width: 95%;
@@ -287,13 +279,18 @@ footer:hover {
     .btn-main {
         padding: 10px 20px;
     }
-    /* Pour les boutons en bas */
+    /* Ajustement des boutons pour les téléphones */
     header nav ul {
-        flex-direction: column;
-        gap: 10px;
-        position: absolute;
-        bottom: -50px; /* Décalage vertical pour mobile */
-        left: 50%;
-        transform: translateX(-50%);
+        flex-direction: row;  /* Changer l'alignement des boutons en horizontal */
+        justify-content: center; /* Centrer les boutons */
+        width: 100%;
+        position: relative;
+    }
+    header nav ul li {
+        margin: 10px; /* Ajouter un peu d'espace entre les boutons */
+    }
+    .btn-contact {
+        display: block; /* S'assurer que le bouton est visible */
+        margin: 10px auto; /* Centrer le bouton de contact */
     }
 }
