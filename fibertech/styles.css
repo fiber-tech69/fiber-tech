@@ -184,5 +184,66 @@ footer:hover {
         background: rgba(255, 255, 255, 0.1);
         border: 2px solid white;
         border-radius: 5px;
+    }@media screen and (max-width: 768px) {
+    header nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 10px 0;
+        text-align: center;
     }
+
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    header nav ul li a {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 10px 15px;
+        border-radius: 10px;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    header nav ul li a:hover {
+        background: white;
+        color: #e91e1e;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 80px 20px;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1em;
+        margin: 10px 0;
+    }
+
+    /* Service Page */
+    .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .services h2 {
+        font-size: 22px;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 15px;
+        border-radius: 10px;
+        display: inline-block;
+        width: 80%;
+    }
+}
 }
