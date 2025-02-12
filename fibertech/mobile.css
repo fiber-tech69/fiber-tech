@@ -1,0 +1,81 @@
+/* Styles spécifiques pour mobile */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 15px 0;
+    }
+
+    header .logo {
+        position: static;
+        transform: scale(0.9);
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header nav {
+        position: static;
+        margin-top: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav ul li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2.2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .btn-main {
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .services {
+        padding: 40px 10px;
+    }
+
+    .service-item {
+        margin: 15px 5px;
+        padding: 20px;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+
+    .contact-info {
+        padding: 15px;
+    }
+
+    .btn-contact {
+        width: 100%;
+        padding: 12px;
+    }
+}
