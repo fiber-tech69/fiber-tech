@@ -56,6 +56,16 @@
         text-align: center;
         padding: 12px;
     }
+    
+/* Pour les écrans plus grands (tablettes et ordinateurs) */
+@media (min-width: 768px) {
+    .btn-main {
+        width: auto; /* Laisser la taille automatique sur grand écran */
+        display: inline-block; /* Affichage horizontal avec d'autres éléments */
+        text-align: left; /* Aligner à gauche ou autre alignement si nécessaire */
+        padding: 12px 24px; /* Tu peux ajuster le padding pour un meilleur effet */
+    }
+}
 
     .services {
         padding: 40px 10px;
